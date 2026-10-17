@@ -22,3 +22,6 @@ ifneq ($(WITH_GMS),true)
 PRODUCT_PACKAGES += \
     LatinIME
 endif
+
+-include packages/apps/AxionFx/config.mk
+

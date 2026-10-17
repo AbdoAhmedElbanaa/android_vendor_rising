@@ -1,4 +1,5 @@
 -include vendor/addons/config.mk
+-include vendor/lineage-priv/keys/keys.mk
 include vendor/rising/config/properties.mk
 include vendor/rising/config/packages.mk
 include vendor/rising/config/version.mk
