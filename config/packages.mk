@@ -25,3 +25,14 @@ endif
 
 -include packages/apps/AxionFx/config.mk
 
+# Dual Audio
+ifeq ($(filter true 1,$(TARGET_ENABLE_DUAL_AUDIO) $(WITH_DUAL_AUDIO)),true)
+PRODUCT_PACKAGES += \
+    DualAudio
+endif
+
+# Clarifae AI Audio Clarity
+ifeq ($(filter true 1,$(TARGET_ENABLE_CLARIFAE) $(WITH_CLARIFAE)),true)
+PRODUCT_PACKAGES += \
+    Clarifae
+endif
